@@ -53,3 +53,13 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # inherit from the proprietary version
 -include vendor/lge/vs985/BoardConfigVendor.mk
+
+# BlissPop Config Flags
+TARGET_TC_ROM := 4.8
+TARGET_TC_KERNEL := 4.10-linaro
+BLISSIFY := true
+BLISS_O3 := true
+BLISS_STRICT := true
+BLISS_GRAPHITE := true
+BLISS_KRAIT := true
+
