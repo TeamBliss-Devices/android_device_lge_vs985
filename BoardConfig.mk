@@ -55,8 +55,8 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 -include vendor/lge/vs985/BoardConfigVendor.mk
 
 # BlissPop Config Flags
-TARGET_TC_ROM := 4.8
-TARGET_TC_KERNEL := 4.10-linaro
+TARGET_TC_ROM := 4.8-sm
+TARGET_TC_KERNEL := 4.9-sm
 BLISSIFY := true
 BLISS_O3 := true
 BLISS_STRICT := true
