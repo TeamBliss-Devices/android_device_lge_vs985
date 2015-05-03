@@ -24,9 +24,25 @@ BOARD_HAVE_BLUETOOTH_QCOM := true
 BLUETOOTH_HCI_USE_MCT := true
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/vs985/bluetooth
 
+BLISS_BUILD_BLOCK := 1
+BLISS_WIPE_CACHES := 1
+TARGET_TC_ROM :=4.8-sm
+TARGET_TC_KERNEL :=4.9-sm
+BLISSIFY :=true
+BLISS_O3 :=true
+BLISS_GRAPHITE :=false
+BLISS_STRICT :=false
+BLISS_KRAIT :=true
+BLISS_PIPE :=true
+TARGET_GCC_VERSION_EXP := $(TARGET_TC_ROM)
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := $(TARGET_TC_KERNEL)
+
 # Kernel
-TARGET_KERNEL_CONFIG := cyanogenmod_vs985_defconfig
+#TARGET_KERNEL_CONFIG := cyanogenmod_vs985_defconfig
 TARGET_REQUIRES_BUMP := true
+TARGET_KERNEL_CONFIG := vs985_defconfig
+TARGET_KERNEL_SOURCE := kernel/lge/777jon
+TARGET_KERNEL_MODULES := true
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 16777216
@@ -54,12 +70,4 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 # inherit from the proprietary version
 -include vendor/lge/vs985/BoardConfigVendor.mk
 
-# BlissPop Config Flags
-TARGET_TC_ROM := 4.8-sm
-TARGET_TC_KERNEL := 4.9-sm
-BLISSIFY := true
-BLISS_O3 := true
-BLISS_STRICT := true
-BLISS_GRAPHITE := true
-BLISS_KRAIT := true
-
+-include vendor/bliss/config/sm.mk
