@@ -1,1 +1,2 @@
-add_lunch_combo cm_vs985-userdebug
+add_lunch_combo bliss_vs985-userdebug
+add_lunch_combo bliss_vs985-user
