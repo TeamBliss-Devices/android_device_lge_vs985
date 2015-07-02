@@ -13,7 +13,7 @@
   },
   {
     "remote": "github",
-    "repository": "TeamBliss-Devices/g3_kernell",
+    "repository": "TeamBliss-Devices/g3_kernel",
     "target_path": "kernel/lge/777jon",
     "revision": "lp-release"
   }
