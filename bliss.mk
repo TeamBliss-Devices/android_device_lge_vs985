@@ -1,3 +1,6 @@
+#Bliss Audio Mod
+BLISS_AUDIO_MOD := viper
+
 $(call inherit-product, device/lge/vs985/full_vs985.mk)
 
 # Inherit some common CM stuff.
