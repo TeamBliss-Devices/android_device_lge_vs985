@@ -16,5 +16,11 @@
     "repository": "TeamBliss-Devices/g3_kernel",
     "target_path": "kernel/lge/777jon",
     "revision": "lp-release"
+  },
+  {
+    "remote":      "github",
+    "repository":  "CyanogenMod/android_device_qcom_common",
+    "target_path": "device/qcom/common",
+    "revision":    "cm-12.1"
   }
 ]
